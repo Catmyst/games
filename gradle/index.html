@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <h1 id="help" onclick="getHelp()">?</h1>
+
+    <h1 class="text title">Gradle</h1>
+    <h2 class="text title">Guess the gradient (-2 to 2)<br>of the function below!</h1>
+
+    <div id="graphWrap">
+        <canvas id="graph" width="1" height="1"></canvas>
+    </div>
+
+    <div class="text">
+        <input id="answer" class="center" type="number" min="-1.00" max="1.00"> 
+        <input id="submit"class="center" type="submit" onclick="check()">
+    </div>
+
+    <div id="warning" class="text pre" style="color: red;"> </div>
+
+    <h2 class="text pre">No.      Guess      Result</h2> 
+    <div id="guesses" class="text"></div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+canvas{
+    background-color: white;
+    border-radius: 5%;
+}
+
+input{
+    font-size: 2em;
+}
+
+
+
+#guesses{
+    position: relative;
+}
+
+#help{
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    top: 0;
+    right: 20px;
+    color:white;
+    border: 2px, solid, white;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+#graphWrap{
+    position: relative;
+    top: 10px;
+}
+
+@media screen and (min-width:480px) {
+    #graphWrap{
+        width: 400px;
+        left: calc(50vw - 200px);
+    }
+}
+
+@media screen and (max-width:480px) {
+    #graphWrap{
+        width: 80vw;
+        left: 10vw;
+    }
+}
+
+
+
+.text{
+    position: relative;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    top: 30px;
+}
+
+.title{
+    position: relative;
+    top: 10px;
+}
+
+.pre{
+    white-space: pre;
+}
+
+.guess{
+    display: flex;
+}
+
+.center{
+    margin: auto;
+}
